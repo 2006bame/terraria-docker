@@ -1,6 +1,6 @@
 FROM docker.io/alpine:latest
 # VERSION comes from the main.yml workflow --build-arg
-ARG VERSION
+ENV VERSION=2025.06.3.0
 
 RUN mkdir -p /opt/terraria/server/ &&\
     mkdir -p /opt/terraria/config/ModPacks &&\
